@@ -23,11 +23,14 @@ st.caption("Machine-learning-based drought risk assessment and agricultural reco
 bundle = load_bundle()
 
 if bundle is None:
-    st.error("The trained model file is missing.")
+    st.error("The trained model file is missing: best_drought_model.joblib")
     st.markdown(
-        "Add **best_drought_model.joblib** to the same GitHub folder as `app.py`. "
-        "Generate it by running your training script (`drought.py`) with the correct Excel dataset."
+        "The app code is running, but the trained model has not been uploaded to GitHub yet. "
+        "Run **drought.py** with the correct Excel dataset. The repaired training script now "
+        "automatically copies the finished model beside `app.py`."
     )
+    st.code("app.py\ndrought.py\nbest_drought_model.joblib\nrequirements.txt\nREADME.md\n.gitignore", language="text")
+    st.info("After training finishes, commit and push best_drought_model.joblib to the same GitHub repository as app.py, then redeploy/reboot the Streamlit app.")
     st.stop()
 
 model = bundle["model"]

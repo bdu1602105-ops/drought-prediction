@@ -26,10 +26,22 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# ==========================================
+# 3. PROJECT FILE PATHS
+# ==========================================
+
 ROOT = Path(__file__).resolve().parent
+
+# Model outputs folder
+OUTPUT_DIR = ROOT / "drought_model_outputs"
+
+# Trained model is in the main GitHub repository folder
 MODEL_PATH = ROOT / "best_drought_model.joblib"
-MODEL_PATH = OUTPUT_DIR / "best_drought_model.joblib"
+
+# Dataset path
 DATA_PATH = ROOT / "Ethiopia_Drought_Risk_Dataset(2).xlsx"
+
+# Evaluation and metadata files
 METRICS_PATH = OUTPUT_DIR / "model_comparison.csv"
 IMPORTANCE_PATH = OUTPUT_DIR / "feature_importance.csv"
 METADATA_PATH = OUTPUT_DIR / "model_metadata.json"

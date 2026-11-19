@@ -282,7 +282,7 @@ if model_error:
 if bundle is None:
     st.warning(
         "The trained model is not available. Add "
-        "`drought_model_outputs/best_drought_model.joblib` to activate prediction."
+        "`best_drought_model.joblib` to activate prediction."
     )
 
 # ---------------------------------------------------------------------

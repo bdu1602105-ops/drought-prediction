@@ -1,9 +1,13 @@
-# -*- coding: utf-8 -*-
-"""
-Professional Streamlit dashboard
-Agricultural Drought Risk Prediction and Recommendation System in Ethiopia
+# ==========================================
+# 1. PAGE CONFIGURATION
+# ==========================================
 
-Run:
+st.set_page_config(
+    page_title="Agricultural Drought Risk Prediction and Recommendation System in Ethiopia",
+    page_icon="🌾",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
     streamlit run app.py
 """
 

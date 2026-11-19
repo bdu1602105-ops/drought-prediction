@@ -27,7 +27,7 @@ st.set_page_config(
 )
 
 ROOT = Path(__file__).resolve().parent
-OUTPUT_DIR = ROOT / "drought_model_outputs"
+MODEL_PATH = ROOT / "best_drought_model.joblib"
 MODEL_PATH = OUTPUT_DIR / "best_drought_model.joblib"
 DATA_PATH = ROOT / "Ethiopia_Drought_Risk_Dataset(2).xlsx"
 METRICS_PATH = OUTPUT_DIR / "model_comparison.csv"

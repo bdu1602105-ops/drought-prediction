@@ -20,7 +20,8 @@ import streamlit as st
 # 1. PAGE CONFIGURATION AND THEME
 # ---------------------------------------------------------------------
 st.set_page_config(
-    page_title="Ethiopia Drought Intelligence",
+    page_title="Agricultural Drought Risk Prediction and Recommendation System in Ethiopia
+",
     page_icon="🌾",
     layout="wide",
     initial_sidebar_state="expanded",
